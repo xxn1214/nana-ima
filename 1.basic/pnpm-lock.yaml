@@ -18,6 +18,9 @@ importers:
       '@types/node':
         specifier: 22.20.1
         version: 22.20.1
+      prettier:
+        specifier: 3.9.6
+        version: 3.9.6
       typescript:
         specifier: 7.0.2
         version: 7.0.2
@@ -176,8 +179,8 @@ packages:
   js-tiktoken@1.0.21:
     resolution: {integrity: sha512-biOj/6M5qdgx5TKjDnFT1ymSpM5tbd3ylwDtrQvFQSu0Z7bBYko2dF+W/aUkXUPuk6IVpRxk/3Q2sHOzGlS36g==}
 
-  langsmith@0.8.9:
-    resolution: {integrity: sha512-6ikTB5SO+3SlBQ/+oH8K/JzhglxB8AM4RAe5bHzgWSEIHTgTe+b71bSjf1fDvlYuEXoiPn6uP10BbczrbznUnA==}
+  langsmith@0.8.10:
+    resolution: {integrity: sha512-OG07MX2vyWcLyx/RhXPcydZVpuJSmCrcI1PxVmOR7TOoGWnGV68yUIaA85kc9v0gBkyD6cWa2VnBNBZcTN/qcQ==}
     peerDependencies:
       '@opentelemetry/api': '*'
       '@opentelemetry/exporter-trace-otlp-proto': '*'
@@ -232,6 +235,11 @@ packages:
     resolution: {integrity: sha512-rhIwUycgwwKcP9yTOOFK/AKsAopjjCakVqLHePO3CC6Mir1Z99xT+R63jZxAT5lFZLa2inS5h+ZS2GvR99/FBg==}
     engines: {node: '>=8'}
 
+  prettier@3.9.6:
+    resolution: {integrity: sha512-OpN0zzVdiaiAhxpuuj5efpIS4sY9j7bY6uR5mnj5yPzGkdkjNKSJeUThPb60Jw29QuAZgA4o+/iB49kFiaBX6g==}
+    engines: {node: '>=14'}
+    hasBin: true
+
   typescript@7.0.2:
     resolution: {integrity: sha512-8FYau96o3NKOhbjKi/qNvG/W5jhzxkbdm5sj9AbZ/5T5sWqn3hJgLfGx27sRKZWTvyzCP8dLRBTf5tBTSRVUNA==}
     engines: {node: '>=16.20.0'}
@@ -252,7 +260,7 @@ snapshots:
       '@cfworker/json-schema': 4.1.1
       '@standard-schema/spec': 1.1.0
       js-tiktoken: 1.0.21
-      langsmith: 0.8.9(openai@6.49.0(zod@4.4.3))
+      langsmith: 0.8.10(openai@6.49.0(zod@4.4.3))
       mustache: 4.2.0
       p-queue: 6.6.2
       zod: 4.4.3
@@ -351,7 +359,7 @@ snapshots:
     dependencies:
       base64-js: 1.5.1
 
-  langsmith@0.8.9(openai@6.49.0(zod@4.4.3)):
+  langsmith@0.8.10(openai@6.49.0(zod@4.4.3)):
     dependencies:
       p-queue: 6.6.2
     optionalDependencies:
@@ -373,6 +381,8 @@ snapshots:
   p-timeout@3.2.0:
     dependencies:
       p-finally: 1.0.0
+
+  prettier@3.9.6: {}
 
   typescript@7.0.2:
     optionalDependencies:
