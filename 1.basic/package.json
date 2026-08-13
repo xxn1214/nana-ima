@@ -4,18 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build":"tsc"
+    "build": "tsc"
   },
-  "dependencies":{
-    "dotenv":"17.4.2",
-    "@langchain/openai":"1.5.5"
+  "dependencies": {
+    "@langchain/community": "1.1.29",
+    "@langchain/core": "^1.2.6",
+    "@langchain/openai": "1.5.5",
+    "dotenv": "17.4.2",
+    "d3-dsv":"3.0.1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies":{
-    "@types/node":"22.20.1",
-    "typescript":"7.0.2",
-    "prettier":"3.9.6"
+  "devDependencies": {
+    "@types/node": "22.20.1",
+    "prettier": "3.9.6",
+    "typescript": "7.0.2"
   }
 }
