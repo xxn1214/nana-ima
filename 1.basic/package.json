@@ -10,8 +10,10 @@
     "@langchain/community": "1.1.29",
     "@langchain/core": "^1.2.6",
     "@langchain/openai": "1.5.5",
-    "dotenv": "17.4.2",
-    "d3-dsv":"3.0.1"
+    "@langchain/textsplitters":"1.0.1",
+    "d3-dsv": "3.0.1",
+    "dotenv": "^16.4.5",
+    "pnpm": "^11.22.0"
   },
   "keywords": [],
   "author": "",

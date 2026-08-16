@@ -16,6 +16,7 @@ export const invoke = async() => {
     const llm = new ChatOpenAI({
         model: getEnv("NANA_MODEL"),
         apiKey: getEnv("NANA_API_KEY"),
+        temperature:0,
         configuration: {
             baseURL: getEnv("NANA_API_BASE_URL"),
         },
